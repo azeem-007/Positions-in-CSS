@@ -1,0 +1,28 @@
+Both Position Relative and Position Absolute are CSS positioning properties. They dictate the behavior of an element's position on the page. However, there are significant differences between the two.
+
+Position Relative:
+
+An element with Position Relative is positioned relative to its normal position in the document layout.
+The element will still take up its normal space in the layout.
+Other elements will not be affected by its new position.
+The positioning properties used are top, right, bottom, and left. These properties specify how far an element should be moved from its normal position.
+Example of Position Relative:
+
+.box {
+ position: relative;
+ top: 20px;
+ left: 30px;
+}
+Position Absolute:
+
+An element with Position Absolute is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport).
+If an absolutely positioned element has no positioned ancestors, it will use the document body, and it will be positioned relative to the initial containing block.
+The element is removed from the normal document flow; other elements will not be affected by its new position.
+The positioning properties used are top, right, bottom, and left. These properties specify the element's new position.
+Example of Position Absolute:
+
+.box {
+ position: absolute;
+ top: 20px;
+ left: 30px;
+}
